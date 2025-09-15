@@ -1,0 +1,15 @@
+import numpy as np
+matrix = np.arange(2, 11).reshape(3, 3)
+print("Original 3x3 Matrix:")
+print(matrix)
+matrix = matrix.astype(float)
+print("\nMatrix converted to float:")
+print(matrix)
+flattened_array = matrix.flatten()
+print("\nFlattened Array:")
+print(flattened_array)
+max_value = np.max(flattened_array)
+min_value = np.min(flattened_array)
+
+print("\nMaximum Value of Flattened Array:", max_value)
+print("Minimum Value of Flattened Array:", min_value)
